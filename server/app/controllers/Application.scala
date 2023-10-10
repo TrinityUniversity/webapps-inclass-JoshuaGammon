@@ -16,4 +16,8 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
     Ok(views.html.newPage(SharedMessages.itWorks))
   }
 
+  def newTable = Action {
+    Ok(views.html.newTable(SharedMessages.itWorks))
+  }
+
 }
