@@ -6,6 +6,13 @@
 GET        /                             controllers.Application.index
 GET        /newPage                      controllers.Application.newPage
 GET        /newTable                     controllers.Application.newTable 
+GET        /colorSubmit                  controllers.Application.colorSubmit
+GET        /enterUser                    controllers.Application.enterUser
++ nocsrf
+POST       /enterUser                    controllers.Application.enterUserController
+
+GET        /numberClicker                controllers.Application.numberClicker
+GET        /getNumber                    controllers.Application.getNumber
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
