@@ -14,6 +14,8 @@ POST       /enterUser                    controllers.Application.enterUserContro
 GET        /numberClicker                controllers.Application.numberClicker
 GET        /getNumber                    controllers.Application.getNumber
 
+GET        /getSocket                    controllers.Application.getSocket
+
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
